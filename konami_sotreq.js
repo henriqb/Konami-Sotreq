@@ -5,7 +5,7 @@
 
     if (typeof cheet === 'undefined') {
         // gets: https://github.com/namuol/cheet.js
-        $.getScript('http://cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js', cheetLoaded);
+        $.getScript('https://cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js', cheetLoaded);
     } else {
         cheetLoaded();
     }
