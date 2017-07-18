@@ -18,21 +18,10 @@
 
     function cheetLoaded() {
         cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {           
-            randomize(cat,biru,contribute,rushB, roll).run();
+            randomize(cat,biru,contribute,rushB,roll).run();
         });
-    }
+    }    
     
-    function roll(){
-        alert('O');
-        var b = document.body;
-        b.style.transformOrigin  = '50% 50%';
-        b.style.transition = '2s';
-        b.style.transform = 'rotate(1800deg)';
-        setTimeout(function(){
-            b.style.transition = '0s';
-            b.style.transform = 'rotate(0deg)';
-        }, 2100);
-    }
     /**
      * functions to run as easter egg's
      */
@@ -88,5 +77,17 @@
         setTimeout(function () {
             div.remove();
         }, 3500);
+    }
+	
+	function roll(){
+        alert('O');
+        var b = document.body;
+        b.style.transformOrigin  = '50% 50%';
+        b.style.transition = '2s';
+        b.style.transform = 'rotate(1800deg)';
+        setTimeout(function(){
+            b.style.transition = '0s';
+            b.style.transform = 'rotate(0deg)';
+        }, 2100);
     }
 })(jQuery);
